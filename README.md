@@ -14,7 +14,7 @@ Version locks are in place to make it easier to do controlled switches to new ve
 
 See `./config.sh` to see the git hashes that are included in this version.
 
-The output is json-files that can be consumed by [cis-benchmark-allure-reporter](https://github.com/presidenten/cis-benchmark-allure-reporter).
+The output are json-files that can be consumed by [cis-benchmark-allure-reporter](https://github.com/presidenten/cis-benchmark-allure-reporter).
 
 ---
 
