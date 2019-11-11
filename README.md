@@ -4,15 +4,12 @@ dev-sec-cis-benchmarks
 What it is
 ----------
 
-This is a docker image that run the Chef Inspec versions of
-- dil (distribution independent linux)
-- docker
-- kubernetes
-[CIS-benchmarks](https://www.cisecurity.org/cis-benchmarks/) from https://dev-sec.io/ with specified versions.
+This is a docker image that run the Chef Inspec versions of [CIS-benchmarks](https://www.cisecurity.org/cis-benchmarks/) from [dev-sec.io](https://dev-sec.io) with specified versions. These benchmarks are included:
+- [dil (distribution independent linux)](https://github.com/dev-sec/cis-dil-benchmark)
+- [docker](https://github.com/dev-sec/cis-docker-benchmark)
+- [kubernetes](https://github.com/dev-sec/cis-kubernetes-benchmark)
 
-Version locks are in place to make it easier to do controlled switches to new versions of CIS-benchmarks.
-
-See `./config.sh` to see the git hashes that are included in this version.
+The included benchmarks have their versions specified with git hashes. See `./config.sh` for the git hashes that are included in this version.
 
 The output are json-files that can be consumed by [cis-benchmark-allure-reporter](https://github.com/presidenten/cis-benchmark-allure-reporter).
 
