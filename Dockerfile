@@ -1,7 +1,7 @@
 FROM chef/inspec:4.18.27
 
 COPY inspec /share/inspec
-COPY app/* /share
+COPY app/* /share/
 
 RUN addgroup -S user && \
     adduser -S user -G user && \
