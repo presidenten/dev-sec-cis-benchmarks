@@ -5,7 +5,7 @@ What it is
 ----------
 
 This is a docker image that run the Chef Inspec versions of
-- distribution independent linux
+- (distribution independent linux)
 - docker
 - kubernetes
 [CIS-benchmarks](https://www.cisecurity.org/cis-benchmarks/) from https://dev-sec.io/ with specified versions.
@@ -30,4 +30,3 @@ docker container run --rm \
   -v $(pwd)/output:/share/output \
   sec-dev-cis-benchmarks
 ```
-
