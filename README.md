@@ -1,4 +1,4 @@
-sec-dev-cis-benchmarks
+dev-sec-cis-benchmarks
 ======================
 
 What it is
@@ -28,5 +28,5 @@ docker container run --rm \
   -e SERVER=$SERVER -e -e USER=$USER \
   -v ~/.ssh:/share/ssh:ro \
   -v $(pwd)/output:/share/output \
-  sec-dev-cis-benchmarks
+  dev-sec-cis-benchmarks
 ```
