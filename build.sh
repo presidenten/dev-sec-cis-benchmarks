@@ -1,6 +1,6 @@
 #!/bin/bash
 
-export VERSION=1.0.1
+export VERSION=1.0.2-grub2-newer-k8s
 export NAME=dev-sec-cis-benchmarks
 export REG=presidenten
 
