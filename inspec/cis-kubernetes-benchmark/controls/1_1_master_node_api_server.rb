@@ -494,7 +494,7 @@ control 'cis-kubernetes-benchmark-1.1.33' do
 end
 
 control 'cis-kubernetes-benchmark-1.1.34' do
-  title 'Ensure that the --experimental-encryption-provider-config argument is set as appropriate'
+  title 'Ensure that the --encryption-provider-config argument is set as appropriate'
   desc "Encrypt etcd key-value store.\n\nRationale: etcd is a highly available key-value store used by Kubernetes deployments for persistent storage of all of its REST API objects. These objects are sensitive in nature and should be encrypted at rest to avoid any disclosures."
   impact 1.0
 
@@ -502,7 +502,7 @@ control 'cis-kubernetes-benchmark-1.1.34' do
   tag level: 1
 
   describe processes(apiserver).commands.to_s do
-    it { should match(/--experimental-encryption-provider-config=/) }
+    it { should match(/--encryption-provider-config=/) }
   end
 end
 
